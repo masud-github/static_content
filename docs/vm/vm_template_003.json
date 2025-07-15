@@ -123,6 +123,7 @@
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
+    "networkSecurityGroupName": [format('vmName', '-NSG')],
     "securityProfileJson": {
       "uefiSettings": {
         "secureBootEnabled": true,
