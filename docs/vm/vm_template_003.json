@@ -35,6 +35,12 @@
         "description": "Name for the Public IP used to access the Virtual Machine."
       }
     },
+    "networkSecurityGroupName": {
+      "type": "string",
+      "metadata": {
+        "description": "Network Security Group Name for the Virtual Machine."
+      }
+    },
     "publicIPAllocationMethod": {
       "type": "string",
       "metadata": {
