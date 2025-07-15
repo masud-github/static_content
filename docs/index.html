@@ -5,6 +5,15 @@
 </head>
 <body>
     <h2></h2>
-    <iframe src="vm_template_002.json" width="500" height="300"></iframe>
+    <div id="JSON"></div>
+
+    <script>
+        fetch('vm_template_002.json')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('JSON').innerText = data;
+            })
+            .catch(error => console.error('Error fetching json file:', error));
+    </script>
 </body>
 </html>
